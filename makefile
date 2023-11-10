@@ -1,7 +1,7 @@
 
 
 RUSTBIND = -I./rcalc/target/cxxbridge/rcalc/src/ -I./rcalc/target/cxxbridge/
-RUSTBINDLIB = -L rcalc/target/release -l rcalc 
+RUSTBINDLIB = -L rcalc/target/release -l rcalc  -lpthread -ldl
 
 all: 
 	make -C rcalc
